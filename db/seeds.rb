@@ -6,6 +6,19 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+User.create(
+  name: "Isla Harris",
+  email: "isla@test.com",
+  password: "password",
+  password_confirmation: "password"
+)
+
+User.create(
+  name: "Xavier Martin",
+  email: "xavier@test.com",
+  password: "password",
+  password_confirmation: "password"
+)
 
 FamilyTree.create(
   user_id: 1,
@@ -22,7 +35,7 @@ FamilyTree.create(
 )
 
 FamilyTree.create(
-  user_id: 1,
+  user_id: 2,
   name: "Sabrina Martin",
   relationship: "Spouse",
   image_url: "https://cdn.vectorstock.com/i/preview-1x/83/67/mom-and-sun-vector-44958367.webp"
