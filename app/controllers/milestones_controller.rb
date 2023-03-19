@@ -1,9 +1,14 @@
 class MilestonesController < ApplicationController
-  before_action :milestone, only: [:show, :update, :destroy]
+  before_action :authenticate_user, :milestone, only: [:show, :update, :destroy]
 
   def index
-    milestones = Milestone.all
-    render json: milestones.as_json
+    user = User.find_by(id: current_user.id)
+    if user
+      milestones = Milestone.all
+      render json: milestones.as_json 
+    else
+      render json: {error: "milestones  not found"}
+    end
   end
 
   def create
