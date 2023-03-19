@@ -1,10 +1,14 @@
 class KidsController < ApplicationController
 
-  before_action :kid, only: [:show, :update, :destroy]
+  before_action :authenticate_user, :kid, only: [:show, :update, :destroy]
 
   def index
-    kids = Kid.all
-    render json: kids.as_json
+    user = User.find_by(id: current_user.id)
+    if user
+      render json: user.kids 
+    else
+      render json: {error: "kids  not found"}
+    end
   end
 
   def create
