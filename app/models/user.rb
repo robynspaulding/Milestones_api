@@ -4,4 +4,5 @@ class User < ApplicationRecord
 
   has_many :family_trees
   has_many :kids
+  has_many :photos
 end

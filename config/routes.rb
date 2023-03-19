@@ -13,4 +13,7 @@ Rails.application.routes.draw do
 
   #milestones routes
   resources :milestones
+
+  #photos routes
+  resources :photos
 end

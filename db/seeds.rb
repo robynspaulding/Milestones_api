@@ -130,3 +130,34 @@ Milestone.create(
   image_url: "https://cdn.vectorstock.com/i/preview-1x/74/29/happy-baby-laughing-out-loud-cartoon-vector-44667429.webp"
   )
   #_______________ Photo __________________
+Photo.create(
+  user_id: 1,
+  kid_id: 1,
+  date: "03/21/2018",
+  description: "Vacation in Hawaii",
+  image_url: "https://images.all-free-download.com/images/graphicwebp/hawaii_banner_tourist_enjoy_cocktail_icon_cartoon_design_6839429.webp"
+)
+
+Photo.create(
+  user_id: 1,
+  kid_id: 1,
+  date: "05/17/2018",
+  description: "Family reunion in Sacramento, CA",
+  image_url: "https://thumbs.dreamstime.com/b/portrait-big-happy-family-many-people-different-generations-illustration-cartoon-characters-such-as-son-father-newborn-202618012.jpg"
+)
+
+Photo.create(
+  user_id: 2,
+  kid_id: 3,
+  date: "06/19/2019",
+  description: "Championship game for the Tigers basketball team",
+  image_url: " https://thumbs.dreamstime.com/b/vector-illustration-kids-playing-basketball-team-game-competition-130313447.jpg"
+)
+
+Photo.create(
+  user_id: 2,
+  kid_id: nil,
+  date: "08/30/2019",
+  description: "Me and my love",
+  image_url: "https://static.vecteezy.com/system/resources/thumbnails/000/175/121/small_2x/People_In_Love_Vector.jpg"
+)
