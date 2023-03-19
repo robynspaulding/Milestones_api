@@ -13,3 +13,17 @@ FamilyTree.create(
   relationship: "Spouse",
   image_url: "https://cdn.vectorstock.com/i/preview-1x/43/69/dad-and-kids-composition-vector-41714369.webp"
 )
+
+FamilyTree.create(
+  user_id: 1,
+  name: "Samantha Tames",
+  relationship: "Parent",
+  image_url: "https://cdn.vectorstock.com/i/1000x1000/96/14/dancing-with-grandma-vector-6749614.webp"
+)
+
+FamilyTree.create(
+  user_id: 1,
+  name: "Sabrina Martin",
+  relationship: "Spouse",
+  image_url: "https://cdn.vectorstock.com/i/preview-1x/83/67/mom-and-sun-vector-44958367.webp"
+)
