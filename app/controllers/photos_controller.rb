@@ -1,10 +1,14 @@
 class PhotosController < ApplicationController
 
-  before_action :photo, only: [:show, :update, :destroy]
+  before_action :authenticate_user, :photo, only: [:show, :update, :destroy]
 
   def index
-    photos = Photo.all
-    render json: photos.as_json
+    user = User.find_by(id: current_user.id)
+    if user
+      render json: user.photos 
+    else
+      render json: {error: "photos  not found"}
+    end
   end
 
   def create
