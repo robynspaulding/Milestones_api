@@ -1,0 +1,2 @@
+class FamilyTreesController < ApplicationController
+end
