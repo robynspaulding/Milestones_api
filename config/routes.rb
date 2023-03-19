@@ -10,4 +10,7 @@ Rails.application.routes.draw do
 
   #kids routes
   resources :kids
+
+  #milestones routes
+  resources :milestones
 end

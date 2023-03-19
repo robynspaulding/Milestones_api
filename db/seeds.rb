@@ -73,6 +73,60 @@ Kid.create(
 )
 
 #_______________ Milestone __________________
-
-
-#_______________ Photo __________________
+Milestone.create(
+  kid_id: 1,
+  milestone_title: "Sitting up",
+  date: "01/12/2019",
+  description: "Ember can sit up on her own now!",
+  image_url: "https://cdn.vectorstock.com/i/preview-1x/82/46/joyful-baby-girl-with-cubes-semi-flat-color-vector-43768246.webp"
+  )
+Milestone.create(
+  kid_id: 1,
+  milestone_title: "Crawling",
+  date: "03/29/2019",
+  description: "Ember crawled for the first time today",
+  image_url: "https://cdn.vectorstock.com/i/preview-1x/18/75/baby-girl-cartoon-flat-style-isolated-on-white-vector-44961875.webp"
+  )
+Milestone.create(
+  kid_id: 2,
+  milestone_title: "First Smile",
+  date: "09/02/2020",
+  description: "Alex showed us his smile today, we were playing Peek-a-boo and he smiled so big!",
+  image_url: "https://cdn.vectorstock.com/i/preview-1x/76/12/cute-cartoon-baby-boy-in-a-cap-vector-22897612.webp"
+  )
+Milestone.create(
+  kid_id: 2,
+  milestone_title: "Said Mama",
+  date: "04/13/2021",
+  description: "Alex said Mama today while he was playing with books!",
+  image_url: "https://cdn.vectorstock.com/i/preview-1x/89/18/cute-batalking-vector-31078918.webp"
+  )
+Milestone.create(
+  kid_id: 3,
+  milestone_title: "First Steps",
+  date: "10/21/2018",
+  description: "Vera took her first steps today with Daddy! they wer playing with her favorite toy and she let go of the couch and walked to him to get it!",
+  image_url: "https://cdn.vectorstock.com/i/1000x1000/99/46/bafirst-steps-vector-38289946.webp"
+  )
+Milestone.create(
+  kid_id: 3,
+  milestone_title: "First day of Daycare",
+  date: "08/01/2020",
+  description: "Vera had her first day of daycare today!",
+  image_url: "https://cdn.vectorstock.com/i/1000x1000/34/48/daycare-activities-vector-38743448.webp"
+  )
+Milestone.create(
+  kid_id: 4,
+  milestone_title: "Rolled Over",
+  date: "01/22/2021",
+  description: "Dawn rolled over for the first time after trying for the last three days! She's getting so big!",
+  image_url: "https://cdn.vectorstock.com/i/preview-1x/20/02/cute-newborn-baby-lying-on-floor-and-playing-vector-45272002.webp"
+  )
+Milestone.create(
+  kid_id: 4,
+  milestone_title: "First laugh",
+  date: "2/15/2021",
+  description: "Dawn had her first big laugh today, she thought it was hilarious when Vera threw blankets on her",
+  image_url: "https://cdn.vectorstock.com/i/preview-1x/74/29/happy-baby-laughing-out-loud-cartoon-vector-44667429.webp"
+  )
+  #_______________ Photo __________________
