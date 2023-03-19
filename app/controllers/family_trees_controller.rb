@@ -1,10 +1,14 @@
 class FamilyTreesController < ApplicationController
 
-  before_action :family_tree, only: [:show, :update, :destroy]
+  before_action :authenticate_user, :family_tree, only: [:show, :update, :destroy]
 
   def index
-    family_trees = FamilyTree.all
-    render json: family_trees.as_json
+    user = User.find_by(id: current_user.id)
+    if user
+      render json: user.family_trees 
+    else
+      render json: {error: "family tree  not found"}
+    end
   end
 
   def create
