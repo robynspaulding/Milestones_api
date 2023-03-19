@@ -156,7 +156,7 @@ Photo.create(
 
 Photo.create(
   user_id: 2,
-  kid_id: nil,
+  kid_id: 3,
   date: "08/30/2019",
   description: "Me and my love",
   image_url: "https://static.vecteezy.com/system/resources/thumbnails/000/175/121/small_2x/People_In_Love_Vector.jpg"
