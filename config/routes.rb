@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   post "/users" => "users#create"
 
+  #family_tree routes
+  resources :family_trees
 end
