@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   #family_tree routes
   resources :family_trees
+
+  #kids routes
+  resources :kids
 end
