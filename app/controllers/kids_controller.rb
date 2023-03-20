@@ -1,6 +1,7 @@
 class KidsController < ApplicationController
 
-  before_action :authenticate_user, :kid, only: [:show, :update, :destroy]
+  before_action :authenticate_user, except: [:index, :show]
+  before_action :kid, only: [:show, :update, :destroy]
 
   def index
     user = User.find_by(id: current_user.id)
