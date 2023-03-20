@@ -14,7 +14,7 @@ class KidsController < ApplicationController
 
   def create
     kid = Kid.new(
-      user_id: params[:user_id],
+      user_id: current_user.id,
       name: params[:name],
       birthday: params[:birthday],
       image_url: params[:image_url]
